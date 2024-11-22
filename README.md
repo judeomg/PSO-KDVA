@@ -6,7 +6,7 @@ This repository contains the implementation of **PSO-KDVA**, which includes fine
 
 ## File Structure and Descriptions
 
-Due to the large size of the models, we have stored them in Google Drive: [Google Drive Link]([https://drive.google.com/drive/folders/1endc4u6qjaaOUJ0Sxks2PYGYeDC9mJ5p?usp=drive_link](https://drive.google.com/file/d/16ICMASiqac-Ht6oeg4AdcLYoJ9biP27c/view?usp=drive_link))
+Due to the large size of the models, we have stored them in Google Drive: [Google Drive Link](https://drive.google.com/file/d/16ICMASiqac-Ht6oeg4AdcLYoJ9biP27c/view?usp=drive_link)
 
 
 
