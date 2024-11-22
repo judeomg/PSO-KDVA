@@ -1,4 +1,4 @@
-# PSO-KDVA: A ghtweight Software Vulnerability Assessment Model Using Particle Swarm Optimization and Knowledge Distillation
+# PSO-KDVA: A Lightweight Software Vulnerability Assessment Model Using Particle Swarm Optimization and Knowledge Distillation
 
 This repository contains the implementation of **PSO-KDVA**, which includes fine-tuning a teacher model, compressing a student model, and performing architecture space search using Particle Swarm Optimization (PSO) for software vulnerability assessment (SVA). It also provides datasets and tools to facilitate research in SVA.
 
