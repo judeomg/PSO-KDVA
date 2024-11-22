@@ -1,7 +1,6 @@
-# PSO-KDVA: A Lightweight Software Vulnerability Assessment Model Using Particle Swarm Optimization and Knowledge Distillation
+# PSO-KDVA: A Knowledge-Driven Variational Autoencoder with Particle Swarm Optimization
 
-This repository contains the implementation of **PSO-KDVA**, which includes fine-tuning a teacher model and compressing a student model for software vulnerability assessment (SVA). It also provides datasets and tools to facilitate research in SVA.
-![image](https://github.com/user-attachments/assets/5b33aed6-896e-49ba-8e43-f4a4e771d8cd)
+This repository contains the implementation of **PSO-KDVA**, which includes fine-tuning a teacher model, compressing a student model, and performing architecture space search using Particle Swarm Optimization (PSO) for software vulnerability assessment (SVA). It also provides datasets and tools to facilitate research in SVA.
 
 ---
 
@@ -32,6 +31,11 @@ This folder contains the dataset used for software vulnerability assessment:
 - **Dataset Details**: Includes vulnerability data formatted for training, validation, and testing purposes.
 - The dataset supports tasks such as vulnerability classification, severity prediction, and more.
 
+#### Root Directory
+- **`pso.py`**: This script performs **architecture space search** using the Particle Swarm Optimization algorithm. **It must be run first** to determine the optimal architecture before proceeding with fine-tuning or compression.
+- **`ga.py`**: Implements Genetic Algorithm for optimization, which can be used as an alternative to PSO.
+- **`flops.py`**: Calculates the Floating Point Operations Per Second (FLOPS) for evaluating model efficiency.
+
 ---
 
 ## Installation and Requirements
@@ -54,7 +58,14 @@ This folder contains the dataset used for software vulnerability assessment:
 
 ## Usage
 
-### Fine-Tuning the Teacher Model
+### Step 1: Architecture Space Search
+1. Run the `pso.py` script to perform architecture space search:
+   ```bash
+   python pso.py
+   ```
+   This script uses the Particle Swarm Optimization algorithm to search for the optimal model architecture based on performance and efficiency.
+
+### Step 2: Fine-Tuning the Teacher Model
 1. Navigate to the `finetune/` directory:
    ```bash
    cd CodeBERT/sva/finetune
@@ -65,7 +76,7 @@ This folder contains the dataset used for software vulnerability assessment:
    python main.py
    ```
 
-### Compressing the Student Model
+### Step 3: Compressing the Student Model
 1. Navigate to the `compress/` directory:
    ```bash
    cd CodeBERT/sva/compress
@@ -80,9 +91,10 @@ This folder contains the dataset used for software vulnerability assessment:
 
 ## Project Goals
 
-1. **Fine-Tuning a Teacher Model**: Train a robust teacher model for SVA tasks.
-2. **Compressing a Student Model**: Reduce model size while maintaining high performance using knowledge distillation.
-3. **SVA Dataset**: Provide a high-quality dataset for evaluating vulnerability assessment models.
+1. **Architecture Space Search**: Use PSO to find optimal model architectures for SVA.
+2. **Fine-Tuning a Teacher Model**: Train a robust teacher model for SVA tasks.
+3. **Compressing a Student Model**: Reduce model size while maintaining high performance using knowledge distillation.
+4. **SVA Dataset**: Provide a high-quality dataset for evaluating vulnerability assessment models.
 
 ---
 
