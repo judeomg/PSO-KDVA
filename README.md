@@ -1,4 +1,4 @@
-# PSO-KDVA: A Knowledge-Driven Variational Autoencoder with Particle Swarm Optimization
+# PSO-KDVA: A ghtweight Software Vulnerability Assessment Model Using Particle Swarm Optimization and Knowledge Distillation
 
 This repository contains the implementation of **PSO-KDVA**, which includes fine-tuning a teacher model, compressing a student model, and performing architecture space search using Particle Swarm Optimization (PSO) for software vulnerability assessment (SVA). It also provides datasets and tools to facilitate research in SVA.
 
@@ -33,7 +33,7 @@ This folder contains the dataset used for software vulnerability assessment:
 
 #### Root Directory
 - **`pso.py`**: This script performs **architecture space search** using the Particle Swarm Optimization algorithm. **It must be run first** to determine the optimal architecture before proceeding with fine-tuning or compression.
-- **`ga.py`**: Implements Genetic Algorithm for optimization, which can be used as an alternative to PSO.
+- **`ga.py`**: Implements Genetic Algorithm for optimization.
 - **`flops.py`**: Calculates the Floating Point Operations Per Second (FLOPS) for evaluating model efficiency.
 
 ---
