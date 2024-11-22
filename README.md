@@ -6,6 +6,8 @@ This repository contains the implementation of **PSO-KDVA**, which includes fine
 
 ## File Structure and Descriptions
 
+Due to the large size of the models, we have stored them in Google Drive: https://drive.google.com/file/d/16ICMASiqac-Ht6oeg4AdcLYoJ9biP27c/view?usp=drive_link
+
 ### Main Components
 
 #### `CodeBERT/sva/compress/`
